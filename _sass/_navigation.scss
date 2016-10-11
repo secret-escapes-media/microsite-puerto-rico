@@ -160,7 +160,7 @@ $nav-arrow-width: 66px;
         display: block;
         width: $nav-arrow-width;
         height: auto;
-        background-image: url("../img/icon/nav-arrow-dark.png");
+        background-image: url("../img/icons/nav-arrow-dark.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: $nav-arrow-width auto;
@@ -284,12 +284,12 @@ $icon-size: 27px;
   background-repeat: no-repeat;
   background-size: $icon-size;
   &--menu {
-    background-image: url("../img/icon/menu.png");
-    svg & { background-image: url("../img/icon/menu.svg"); }
+    background-image: url("../img/icons/menu.png");
+    svg & { background-image: url("../img/icons/menu.svg"); }
   }
   &--close {
-    background-image: url("../img/icon/close.png");
-    svg & { background-image: url("../img/icon/close.svg"); }
+    background-image: url("../img/icons/close.png");
+    svg & { background-image: url("../img/icons/close.svg"); }
   }
 }
 

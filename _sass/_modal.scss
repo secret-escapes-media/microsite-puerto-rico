@@ -44,7 +44,7 @@
     height: 3em;
     width: 3em;
     background-color: $se-dark-grey-85;
-    background-image: url('../img/icon/close.png');
+    background-image: url('../img/icons/close.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1em;
@@ -52,7 +52,7 @@
     z-index: $z-overlay-upper;
     @include transition;
     .svg & {
-      background-image: url('../img/icon/close.svg');
+      background-image: url('../img/icons/close.svg');
     }
   }
 }
