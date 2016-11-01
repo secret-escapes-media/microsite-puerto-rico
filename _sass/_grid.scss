@@ -16,11 +16,11 @@ $margin: 2em;
 // -------- grid sections --------
 
 section {
-  padding-top: 5.063em;
-  padding-bottom: 5.063em;
+  padding-top: 2.25em;
+  padding-bottom: 2.25em;
   @include bp(large) {
-    padding-top: 6.192em;
-    padding-bottom: 6.192em;
+    padding-top: 3.375em;
+    padding-bottom: 3.375em;
   }
 }
 

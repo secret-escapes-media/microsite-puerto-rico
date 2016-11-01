@@ -15,6 +15,7 @@ input, textarea, keygen, select, button {
   @include bp(medium) {
     font-size: 15px;
   }
+  color: $text-paragraph;
 }
 
 
@@ -26,6 +27,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5 {
   font-family: $title-font-family;
+  color: $text-heading;
   line-height: 1.2;
   margin-bottom: .5em;
 }
@@ -63,6 +65,49 @@ h3, .h3 {
 h4, .h4 { font-size: 1.728em; }
 
 
+// -------- Lists --------
+
+ul {
+  li {}
+}
+
+ol {
+  li {}
+}
+
+dl {
+  dt { margin-bottom: 5px; }
+  dd {}
+}
+
+.list {
+  &--horizontal {
+    list-style: none; padding: 0; margin: 0;
+    li {
+      display: inline-block; position: relative; padding: 0 1em;
+    }
+    li + li:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-50%);
+    }
+  }
+  &--lined {
+    li {
+      list-style: none;
+      font-size: 0.9em;
+      padding: 4px 0;
+    }
+    li + li { border-top: 1px solid $light-grey; }
+  }
+}
+
 // -------- general content styles --------
 
 p + *         { margin-top: 1em; }
@@ -70,7 +115,20 @@ li            { list-style-position: inside; }
 ul li         { list-style-type: disc; }
 ol li         { list-style-type: decimal; }
 em            { font-style: italic; }
-strong        { font-weight: 600; }
+strong        { font-weight: 800; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
 .align-center { text-align: center; }
+.text-white {
+  color: #fff;
+  p,h1,h2,h3,h4,h5,h6,
+  .h1,.h2,.h3,.h4,.h5,.h6 { color: #fff; }
+  hr { background-color: $white-15; }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $light-grey;
+  margin: 1em 0;
+}

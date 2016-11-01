@@ -5,29 +5,57 @@
   padding-top: 3em;
   padding-bottom: 3em;
   color: darken( $white, 20 );
-  text-align: center;
   font-size: .8em;
   font-weight: 400;
   background-color: $black;
+
+  .footer-nav {
+    &__link {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      padding: 0 10px;
+    }
+  }
 }
 
 
-// ---------- Background images ----------
+// ---------- Section styles ----------
 
-.section--fixed-bg {
-  padding-top: 8em;
-  padding-bottom: 8em;
-  color: $white;
-  background-color: $se-light-grey;
-  background: $se-light-grey center no-repeat;
-  background-image: url('../img/bg/bg.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  p { font-weight: 400; }
-  .page-content &:first-child:before {
-    content: '';
-    display: block;
-    height: 3.375em;
+.section {
+  // Fixed background section
+  &--fixed-bg {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    color: $white;
+    background-color: $se-light-grey;
+    background: $se-light-grey center no-repeat;
+    background-image: url('../img/bg/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    p { font-weight: 400; }
+    .page-content &:first-child:before {
+      content: '';
+      display: block;
+      height: 3.375em;
+    }
+  }
+  // Coloured backgrounds
+  &--light-grey-bg {
+    background-color: $light-grey;
+  }
+  &--dark-grey-bg {
+    background-color: $dark-grey;
+    color: $white;
+  }
+  &--black-bg {
+    background-color: $black;
+    color: $white;
+  }
+  &--partner-bg {
+    background-color: $partner-secondary;
+    color: $white;
   }
 }
 
@@ -46,4 +74,7 @@
     text-decoration: none;
   }
   * + & { margin-top: 1em; }
+
+  &--solid { color: white; border: 0; background-color: $se-orange; }
+  &--large { font-size: 1.2em; padding: .5em 3em; }
 }
