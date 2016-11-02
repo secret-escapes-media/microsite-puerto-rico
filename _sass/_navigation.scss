@@ -296,12 +296,12 @@ $icon-size: 27px;
 .logo {
   display: inline-block;
   &--secret-escapes {
-    max-width: 180px;
     padding-top: 4px;
+    &--img { max-width: 180px; }
   }
   &--partner {
-    display: block; 
+    display: block;
     line-height: 0;
-    &-img { max-width: 130px; }
+    &--img { max-width: 130px; }
   }
 }
