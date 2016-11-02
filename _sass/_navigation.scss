@@ -299,5 +299,9 @@ $icon-size: 27px;
     max-width: 180px;
     padding-top: 4px;
   }
-  &--partner { max-width: 130px; }
+  &--partner {
+    display: block; 
+    line-height: 0;
+    &-img { max-width: 130px; }
+  }
 }
