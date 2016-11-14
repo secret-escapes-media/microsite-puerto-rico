@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+
+{% include banner.html %}
+
+
+<section class="section section--padding section--light-grey-bg" id="{{ section.class }}">
+  <div class="row row--padding">
+    {% for section in page.sections %}
+
+      <div class="row__column content_module content_module--small align-center">
+
+        <div class="bg-image-ratio bg-image-ratio--21-9 content_module__image color-white" style="background-image: url('{{ site.baseurl }}/img/content/{{ section.class }}.jpg')">
+          <h2 class="box--link-title">{{section.title}}</h2>
+        </div>
+
+        <div class="content_module__content">
+          <p>{{ section.content }}</p>
+        </div>
+
+      </div>
+
+    {% endfor %}
+  </div>
+</section>
+
+
+{% include norwegian-section.html %}
+
+
+{% include competition-section.html %}
+
+

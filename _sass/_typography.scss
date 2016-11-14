@@ -1,69 +1,153 @@
 // general typographic styles
 
+@font-face {
+  font-family: 'Apercu';
+  src: url('../font/apercu/apercu_regular.eot');
+  src: url('../font/apercu/apercu_regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/apercu/apercu_regular.woff') format('woff'),
+    url('../font/apercu/apercu_regular.ttf') format('truetype'),
+    url('../font/apercu/apercu_regular.svg#apercu_regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../font/apercu/apercu_regular_italic.eot');
+  src: url('../font/apercu/apercu_regular_italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/apercu/apercu_regular_italic.woff') format('woff'),
+    url('../font/apercu/apercu_regular_italic.ttf') format('truetype'),
+    url('../font/apercu/apercu_regular_italic.svg#apercu_regular_italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../font/apercu/apercu_medium.eot');
+  src: url('../font/apercu/apercu_medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/apercu/apercu_medium.woff') format('woff'),
+    url('../font/apercu/apercu_medium.ttf') format('truetype'),
+    url('../font/apercu/apercu_medium.svg#apercu_medium') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../font/apercu/apercu_medium_italic.eot');
+  src: url('../font/apercu/apercu_medium_italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/apercu/apercu_medium_italic.woff') format('woff'),
+    url('../font/apercu/apercu_medium_italic.ttf') format('truetype'),
+    url('../font/apercu/apercu_medium_italic.svg#apercu_medium_italic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../font/apercu/apercu_bold.eot');
+  src: url('../font/apercu/apercu_bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/apercu/apercu_bold.woff') format('woff'),
+    url('../font/apercu/apercu_bold.ttf') format('truetype'),
+    url('../font/apercu/apercu_bold.svg#apercu_bold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../font/apercu/apercu_bold_italic.eot');
+  src: url('../font/apercu/apercu_bold_italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/apercu/apercu_bold_italic.woff') format('woff'),
+    url('../font/apercu/apercu_bold_italic.ttf') format('truetype'),
+    url('../font/apercu/apercu_bold_italic.svg#apercu_bold_italic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+
 
 // -------- root typography styles --------
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+$main-font-family: 'Apercu', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Apercu', 'Helvetica Neue', sans-serif;
+$serif-font-family: 'Noto Serif', serif;
 
 html { font-size:62.5%; }
 body,
 input, textarea, keygen, select, button {
-  font: 400 14px/1.728 $main-font-family;
+  font: 400 14px/1.5 $main-font-family;
   -webkit-text-size-adjust: 100%;
-  @include bp(medium) {
-    font-size: 15px;
-  }
+  font-variant-ligatures: none;
   color: $text-paragraph;
+  @include bp(medium) {
+    font: 400 15px/1.728 $main-font-family;
+  }
 }
 
 
 // -------- Headings --------
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5 {
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5 {
   font-family: $title-font-family;
   color: $text-heading;
   line-height: 1.2;
-  margin-bottom: .5em;
 }
 
-h1, .h1 {
+h1,.h1 {
   font-size: 3.375em;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  + * { margin-top: 0.667em; }
   @include bp(medium) {
-    font-size: 4em;
-  }
-  @include bp(large) {
     font-size: 5.063em;
   }
-}
-
-h2, .h2 {
-  font-size: 2em;
-  @include bp(medium) {
-    font-size: 2.488em;
-  }
   @include bp(large) {
-    font-size: 2.986em;
+    font-size: 6.192em;
   }
 }
 
-h3, .h3 {
-  font-size: 1.728em;
+h2,.h2 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  + * { margin-top: 0.667em; }
   @include bp(medium) {
-    font-size: 2.074em;
+    font-size: 2em;
   }
   @include bp(large) {
     font-size: 2.488em;
   }
 }
 
-h4, .h4 { font-size: 1.728em; }
+h3,.h3 {
+  font-size: 1.4em;
+  font-weight: 800;
+  + * { margin-top: 0.667em; }
+  @include bp(medium) {
+    font-size: 1.6em;
+  }
+  @include bp(large) {
+    font-size: 2em;
+  }
+}
 
+h4,.h4 {
+  font-size: 1.4em;
+  font-weight: 800;
+  line-height: 1.4;
+  + * { margin-top: 0.667em; }
+}
+
+h5,.h5 {
+  letter-spacing: 0.1em; line-height: 1.6;
+  + * { margin-top: 0.667em; }
+}
 
 // -------- Lists --------
 
@@ -82,9 +166,10 @@ dl {
 
 .list {
   &--horizontal {
-    list-style: none; padding: 0; margin: 0;
+    list-style: none; padding: 0; margin: 0; display: flex;
     li {
       display: inline-block; position: relative; padding: 0 1em;
+      flex-grow: 1; text-align: center;
     }
     li + li:after {
       content: '';
@@ -94,7 +179,7 @@ dl {
       display: block;
       height: 100%;
       width: 1px;
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: rgba(0,0,0,0.15);
       transform: translateY(-50%);
     }
   }
@@ -104,12 +189,14 @@ dl {
       font-size: 0.9em;
       padding: 4px 0;
     }
-    li + li { border-top: 1px solid $light-grey; }
+    li + li { border-bottom: 1px solid $light-grey; }
+    li:last-child { border-bottom: 0 !important; }
   }
 }
 
 // -------- general content styles --------
 
+p             { max-width: $xlarge; }
 p + *         { margin-top: 1em; }
 li            { list-style-position: inside; }
 ul li         { list-style-type: disc; }
@@ -118,17 +205,37 @@ em            { font-style: italic; }
 strong        { font-weight: 800; }
 .align-left   { text-align: left; }
 .align-right  { text-align: right; }
-.align-center { text-align: center; }
-.text-white {
+.align-center { text-align: center;
+  p { margin-left: auto; margin-right: auto; } }
+
+.lead-paragraph { font-size: 1.25em; }
+.serif { font-family: $serif-font-family; }
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: $partner-secondary;
+  margin: 1em 0;
+}
+
+
+
+.color-white {
   color: #fff;
   p,h1,h2,h3,h4,h5,h6,
   .h1,.h2,.h3,.h4,.h5,.h6 { color: #fff; }
   hr { background-color: $white-15; }
+  .list--horizontal li:after { background-color: $white-15; }
+  .list--lined li { border-bottom: 1px solid $white-15; }
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-color: $light-grey;
-  margin: 1em 0;
+.color-default {
+  color: $text-paragraph;
+  p,h1,h2,h3,h4,h5,h6,
+  .h1,.h2,.h3,.h4,.h5,.h6 { color: $text-heading; }
+  hr { background-color: $partner-secondary; }
+  .list--horizontal li:after { background-color: $black-15; }
+  .list--lined li { border-bottom: 1px solid $black-15; }
 }
+
+

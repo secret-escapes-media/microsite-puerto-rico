@@ -1,35 +1,45 @@
 ---
 layout: default
-title: Overview
+title: Puerto Rico
 class: overview
+nav: true
 nav-order: 1
+
+banner-title:
+banner-content: >
+  <h4>The culturally kaleidoscopic island of Puerto Rico remains the best kept secret in the Caribbean </h4>
+
+intro: >
+  <p class="lead-paragraph">A spellbinding land, Puerto Rico fuses colonial Spanish flavour with American style, with a people known for warm, vivacious hospitality making any stay a treat. Its astounding beauty will captivate you upon arrival, be it the multi-coloured patchwork of colonial buildings knitted together by cobbled streets, or the tropical rainforests that bleed serendipitously into golden shorelines with azure blue waters. It’s a wholesome, inviting scene that is ripe for exploring.</p>
+  <div class="js-expand-content">
+  <p>Those with an active disposition won’t be disappointed; Puerto Rico offers some of the best surfing and scuba diving spots around – with unique natural phenomenon, like the breathtaking Laguna Grande, providing the icing on the cake. Or choose to mix with the heady culture of this Caribbean jewel, and explore the culinary delights of the island, the endless supply of quality rum, and the hip-shaking sounds of salsa.</p>
+  <p>Puerto Rico is a hot, frantic, and simultaneously laid-back den of complete escape, ready and waiting to fulfil your Caribbean wanderlust.</p>
+  <p>Escape the dreary weather and plan your perfect getaway on sun-drenched shores. Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649*, courtesy of Norwegian.</p>
+  <a href="javascript:void(0);" class="js-expand-content--btn">Read more...</a>
+  </div>
+
 ---
 
-<section class="section--fixed-bg intro site-header__offset text-white">
-  <div class="row row--padding">
-    <h1>{{ page.title }}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <a href="offers.html" class="btn">Offers</a>
+
+{% include banner.html %}
+
+
+<section class="section section--padding section--light-grey-bg">
+  <div class="row row--padding row--columns-6-6-gutters">
+
+    {% assign pagelinks = site.pages | where:"home-nav","true" | sort:"nav-order" %}
+    {% for pagelink in pagelinks %}
+    <a href="{{ site.baseurl }}{{ pagelink.url }}" class="row__column bg-image-ratio bg-image-ratio--3-2 box box--link box--underline box--underline-primary color-white {{ pagelink.class }}" style="background-image:url('{{ site.baseurl }}/img/bg/banner-{{ pagelink.class }}.jpg');">
+      <span class="box--link-title h3">{{ pagelink.title }}</span>
+    </a>
+    {% endfor %}
+
   </div>
 </section>
 
-<section>
-  <div class="row row--padding row--columns-4-4-4-gutters">
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-  </div>
-  <div class="row row--padding">
-    <a href="#" class="btn">button</a>
-  </div>
-</section>
 
-<section class="section--fixed-bg another">
-  <div class="row row--padding row--columns-4-8-gutters">
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <div class="row__column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    </div>
-  </div>
-</section>
+{% include norwegian-section.html %}
+
+
+{% include competition-section.html %}
+

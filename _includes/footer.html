@@ -1,6 +1,6 @@
-<footer class="site-footer text-white">
+<footer class="site-footer color-white">
 
-  <div class="row row--padding row--columns-6-6">
+  <div class="row row--padding row--columns-6-6 row--columns-vertical-align">
     <div class="row__column">
       <a class="logo logo--secret-escapes" href="https://www.secretescapes.com/">
         <img class="logo--secret-escapes--img js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo">
@@ -11,18 +11,34 @@
     </div>
   </div>
 
-  <div class="row row--padding align-center">
+  <div class="row row--padding">
     <hr />
-    {% assign nav-order = site.pages | sort:"nav-order" %}
-    <ul class="list--horizontal footer-nav">
+  </div>
+
+  <div class="row row--padding row--columns-4-4-4-gutters">
+    {% assign nav-order = site.pages | where:"nav","true" | sort:"nav-order" %}
+    {% assign links_per_list = site.pages | where:"nav","true" | size | divided_by: 2 %}
+    <ul class="row__column list--lined footer-nav">
       {% for page in nav-order %}
-      {% if page.nav-order %}
       <li>
         <a class="footer-nav__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
       </li>
+
+      {% if forloop.index == links_per_list %}
+      </ul>
+      <ul class="row__column list--lined footer-nav">
       {% endif %}
+
       {% endfor %}
     </ul>
+    <div class="row__column">
+      <h4>Meet the experts</h4>
+      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.</p>
+      <a href="#" class="btn btn--underline btn--white">Read more</a>
+    </div>
+  </div>
+
+  <div class="row row--padding">
     <hr />
   </div>
 

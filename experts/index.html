@@ -1,0 +1,46 @@
+---
+layout: default
+title: Experts
+class: experts
+home-nav: true
+nav: true
+nav-order: 7
+
+color: 016878
+
+banner-title:
+banner-content:
+
+intro: >
+  <p class="lead-paragraph">Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue.</p>
+
+---
+
+
+{% include banner.html %}
+
+
+<section class="section section--padding section--light-grey-bg">
+  <div class="row row--padding row--columns-4-4-4-gutters">
+
+    {% assign experts = site.data.experts %}
+    {% for expert in experts %}
+    <a href="{{ expert.url }}" data-expert="{{ expert.class }}" class="js-launch-modal row__column bg-image-ratio bg-image-ratio--1-1 box box--link box--underline box--underline-primary color-white" style="background-image:url('{{ site.baseurl }}/img/content/expert-{{ expert.class }}.jpg');">
+      <h3 class="box--link-title">{{ expert.name }}</h3>
+    </a>
+    {% endfor %}
+
+  </div>
+</section>
+
+
+{% include norwegian-section.html %}
+
+
+{% include competition-section.html %}
+
+
+
+
+<!--  EXPERT MODAL -->
+{% include expert-modal.html %}

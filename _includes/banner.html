@@ -1,0 +1,102 @@
+
+
+
+{% if page.banner-content %}
+
+
+
+  <section class="banner site-header__offset color-white" style="background-image:url('{{site.baseurl}}/img/bg/banner-{{ page.class }}.jpg');">
+
+    <div class="row row--padding">
+      <h1 class="banner--title">
+        {% if page.banner-title %}
+          {{ page.banner-title }}
+        {% else %}
+          {{ page.title }}
+        {% endif %}
+      </h1>
+    </div>
+
+    <div class="row row--padding row--columns-7-5-gutters">
+
+      <div class="row__column">
+        <div class="banner--subtitle">
+          {{ page.banner-content }}
+        </div>
+      </div>
+
+      <div class="row__column box box--primary-bg box--overline weather">
+        <h4>
+          San Juan:
+          <span id="temperature"></span>
+        </h4>
+        <p>Get to Puerto Rico from just £159* courtesy of Norwegian.</p>
+        <a href="#" class="btn btn--wide btn--white">Book now</a>
+      </div>
+
+    </div>
+
+  </section><!-- /.banner -->
+
+  {% if page.intro %}
+  <section class="section section--padding-small {% if page.color %}page-bg-color{% else %}section--partner-secondary-bg{% endif %} color-white" style="background-color: #{{ page.color }};">
+
+    <div class="row row--padding intro align-center">
+      {{ page.intro }}
+    </div>
+
+  </section>
+  {% endif %}
+
+
+
+
+{% else %}
+
+
+
+
+  <section class="banner site-header__offset color-white" style="background-image:url('../img/bg/banner-{{ page.class }}.jpg');">
+
+    <div class="row row--padding row--columns-8-4-gutters row--columns-vertical-align">
+
+      <div class="row__column">
+        <h1 class="banner--title">
+          {% if page.banner-title %}
+            {{ page.banner-title }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+        </h1>
+      </div>
+
+    </div>
+
+  </section><!-- /.banner -->
+
+  {% if page.intro %}
+  <section class="section section--padding-small section--partner-secondary-bg color-white" style="background-color: #{{ page.color }};">
+
+    <div class="row row--padding row--columns-8-4-gutters intro">
+      <div class="row__column">
+        {{ page.intro }}
+      </div>
+      <div class="row__column box box--primary-bg box--overline intro--weather">
+        <h4>
+          San Juan:
+          <span id="temperature"></span>
+        </h4>
+        <p>Get to Puerto Rico from just £159* courtesy of Norwegian.</p>
+        <a href="#" class="btn btn--wide btn--white">Book now</a>
+      </div>
+    </div>
+
+  </section>
+  {% endif %}
+
+
+
+
+{% endif %}
+
+

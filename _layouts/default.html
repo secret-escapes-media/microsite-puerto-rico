@@ -13,6 +13,26 @@
 
     {% include footer.html %}
 
+    <script>
+    /*       Get weather
+    /////////////////////////////////////*/
+    $(function() {
+      $.simpleWeather({
+        location: 'San Juan, PR',
+        woeid: '',
+        unit: 'c',
+        success: function(weather) {
+          var locTemperature = weather.currently+" "+weather.temp+"&deg;"+weather.units.temp;
+          $("#temperature").html(locTemperature);
+          $(".weather-data").addClass('weather-data--ready');
+        },
+        error: function(error) {
+          $("#weather").html('<p>'+error+'</p>');
+        }
+      });
+    });
+    </script>
+
   </body>
 
 </html>

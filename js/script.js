@@ -76,60 +76,65 @@
 
 
 ///////////////////////////////////////
-//    Generic modal
+//    Modal
 ///////////////////////////////////////
 
-  var modal          = $('.js-modal'),
-      modalLaunchBtn = $('.js-open-modal'),
-      modalCloseBtn  = $('.js-close-modal');
 
-    // opens modal
-    function modalOpen(event){
-      event.preventDefault();
-      // disable scrolling on background content (doesn't work iOS)
-      $('body').addClass('disable-scroll');
-      // // open modal
-      modal.fadeIn('250', function(){
-        $(this).removeClass('is-closed').addClass('is-open');
-      });
+  var modal         = $('.js-modal'),
+      modalContent  = $('.js-modal__content'),
+      modalClose    = $('.js-modal__close');
+
+  // EVENT - launch modal & populate with content
+  $('.js-launch-modal').on('click', function(e) {
+    var expert = $(this).attr('data-expert');
+    e.preventDefault();
+    // launch modal
+    modal.removeClass('is-closed').addClass('is-open').fadeIn();
+    $('.modal__content#' + expert).addClass('active');
+    $('body').css('overflow', 'hidden');
+  });
+
+  function closeModal() {
+    $('.modal__content.active').removeClass('active');
+    modal.removeClass('is-open').addClass('is-closed').fadeOut();
+    $('body').css('overflow', 'auto');
+  }
+
+  modalClose.click(function() {
+    closeModal();
+  });
+
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) { // escape key maps to keycode `27`
+       closeModal();
     }
+  });
 
-    // closes modal
-    function modalClose(event){
-      event.preventDefault();
-      // enable scrolling
-      $('body').removeClass('disable-scroll');
-      // close modal with fade
-      modal.fadeOut('250', function(){
-        $(this).removeClass('is-open').addClass('is-closed');
-      });
+  // closes modal on background click
+  modal.on('click', function(event) {
+    if (event.target !== this){
+      return;
     }
+    closeModal();
+  });
 
-    // launches modal when offer is clicked
-    modalLaunchBtn.on('click', function(event) {
-      modalOpen(event);
-    });
 
-    // closes modal on close icon click
-    modalCloseBtn.on('click', function(event) {
-      modalClose(event);
-    });
+///////////////////////////////////////
+//    Expanding content
+///////////////////////////////////////
 
-    // closes modal on background click
-    modal.on('click', function(event) {
-      if (event.target !== this){
-        return;
-      }
-      modalClose(event);
-    });
+  var eleHeight = $('.js-expand-content').height();
 
-    // closes modal on escape key press
-    $(document).keyup(function(event) {
-       if (event.keyCode == 27) {
-         modalClose(event);
-        }
-    });
+  $(document).ready(function(){
+    $('.js-expand-content').css('height','30px');
+  });
 
+  $('.js-expand-content--btn').click(function(){
+    $('.js-expand-content').css('height',eleHeight);
+    $(this).parent().addClass('expanded');
+  });
+
+  console.log(eleHeight);
 
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end

@@ -19,7 +19,7 @@ gulp.task('serve', function () {
       server: {
         baseDir: '_site/',
         routes: {
-          '/se-microsite-template': '_site/'
+          '/puerto-rico': '_site/'
         }
       }
     });
@@ -34,6 +34,7 @@ gulp.task('concatScripts', function(){
   return gulp.src([
     './js/modernizr-custom.js',
     './bower_components/jquery/dist/jquery.min.js',
+    './bower_components/simpleWeather/jquery.simpleWeather.min.js',
     './js/script.js'])
   .pipe(concat('scripts.js'))
   .pipe(uglify())

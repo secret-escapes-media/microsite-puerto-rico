@@ -1,5 +1,5 @@
 {
-  "name": "se-microsite-template",
+  "name": "puerto-rico",
   "version": "0.0.0",
   "license": "MIT",
   "ignore": [
@@ -12,6 +12,7 @@
   "devDependencies": {
     "jquery": "1.11.1",
     "susy": "~2.2.6",
+    "simpleWeather": "~3.1",
     "reset-css": "^2.2.0"
   }
 }

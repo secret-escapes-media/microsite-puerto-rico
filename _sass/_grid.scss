@@ -16,6 +16,7 @@ $margin: 2em;
 // -------- grid sections --------
 
 section {
+  width: 100%;
   padding-top: 2.25em;
   padding-bottom: 2.25em;
   @include bp(large) {
@@ -25,7 +26,7 @@ section {
 }
 
 .row {
-  @include container( $xxlarge );
+  @include container( $xxxlarge );
   position: relative;
   & + .row { margin-top: $margin; }
 }
@@ -108,6 +109,11 @@ section {
   .row--columns-vertical-align {
     display: flex;
     align-items: center;
+  }
+
+  // vertical align floated columns
+  .row--columns-reverse {
+    flex-direction: row-reverse;
   }
 
 }

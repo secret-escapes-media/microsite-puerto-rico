@@ -8,42 +8,16 @@
   right: 0;
   bottom: 0;
   z-index: $z-overlay;
-  background-color: $black;
-  background-color: $black-66;
-  cursor: pointer;
-  overflow: hidden;
-  &.is-open { display: block;}
-  &.is-closed { display: none; }
-  &__wrap {
-    position: absolute;
-    top: ($margin * 1.5);
-    left: ($margin / 2);
-    right: ($margin / 2);
-    bottom: ($margin * 1.5);
-    cursor: auto;
-    overflow-y: auto;
-    margin-top: 0 !important;
-    @include bp(large){
-      left: $margin;
-      right: $margin;
-    };
-  }
-  &__content {
-    background-color: $white;
-    padding-top: ($margin / 2);
-    padding-bottom: ($margin / 2);
-    @include bp(large){
-      padding-top: $margin;
-      padding-bottom: $margin;
-    };
-  }
+  background-color: $black-85;
+  overflow-y: auto;
   &__close {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: fixed;
+    right: 2em;
+    top: 2em;
     height: 3em;
     width: 3em;
-    background-color: $se-dark-grey-85;
+    border-radius: 5em;
+    background-color: $black-5;
     background-image: url('../img/icons/close.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -51,12 +25,51 @@
     cursor: pointer;
     z-index: $z-overlay-upper;
     @include transition;
-    .svg & {
-      background-image: url('../img/icons/close.svg');
+    &:hover {
+      right: 1.75em;
+      top: 1.75em;
+      height: 3.5em;
+      width: 3.5em;
+      background-size: 1.33em;
+      background-color: $black-85;
     }
   }
-}
-
-.disable-scroll {
-  overflow: hidden;
+  &__content {
+    max-width: $xlarge;
+    background-color: white;
+    display: none;
+    padding-bottom: ($margin);
+    margin-top: ($margin*2) !important;
+    margin-bottom: ($margin*2);
+    &.active { display: block; }
+  }
+  &__content-wrap {
+    padding: $margin;
+    color: $text-paragraph;
+    background-color: $white;
+  }
+  &__title {
+    font-size: 2.25em;
+    line-height: 1.2;
+    font-weight: 500;
+    @include bp(large) {
+      text-align: left;
+    };
+  }
+  &__image {
+    width: 50%;
+    margin-top: -2em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  &__top-cta {
+    text-align: center;
+    > a { text-align: center; }
+    @include bp(large) {
+      text-align: right;
+    };
+  }
+  &__terms {
+    font-size: .8em;
+    color: #738a8c;
+  }
 }

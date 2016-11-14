@@ -24,7 +24,7 @@ $site-header-height: ($core-nav-height + $site-nav-height);
   font-family: $core-font-family;
   color: $white;
   text-align: center;
-  background-color: $black-66;
+  background-color: $black-85;
   * { vertical-align: middle; }
   &__wrap {
     position: relative;
@@ -46,10 +46,15 @@ $site-header-height: ($core-nav-height + $site-nav-height);
       width: 60%;
       padding-top: 1em;
       .csstransforms.csstransforms3d & {
-        top: 50%;
-        left: 50%;
         padding-top: 0;
-        transform: translate(-50%, -50%);
+        top: 50%;
+
+        left: 4em;
+        transform: translate(0, -50%);
+        @include bp( xlarge ){
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
     &--right {
@@ -134,14 +139,14 @@ $site-header-height: ($core-nav-height + $site-nav-height);
 $nav-arrow-width: 66px;
 .site-nav {
   height: $site-nav-height;
-  font-family: $core-font-family;
+  font-family: $main-font-family;
   text-align: center;
   color: $white;
-  font-size: 13px;
-  line-height: 1.2;
-  letter-spacing: .066em;
-  text-transform: uppercase;
-  background-color: $se-dark-grey-66;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .04em;
+  background-color: $black-66;
   overflow: hidden;
   &__list {
     overflow-x: auto;
@@ -171,6 +176,7 @@ $nav-arrow-width: 66px;
     position: relative;
     display: inline-block;
     white-space: nowrap;
+    color: $light-grey;
     @include transition;
     & + &:before {
       // dividing lines between site nav items
@@ -179,20 +185,19 @@ $nav-arrow-width: 66px;
       top: 50%;
       left: 0;
       display: block;
-      height: ($site-nav-height / 1.33);
-      width: 1px;
-      background-color: $white-15;
+      height: 2px;
+      width: 2px;
+      background-color: $white-5;
       transform: translateY(-50%);
       @include transition;
     }
-    &:hover,
-    &--current { color: $se-orange; }
-    &:hover { background-color: $black-25; }
+    &--current { border-bottom: 3px solid $partner-primary; }
+    &:hover { color: $white; }
   }
   &__link {
     display: inline-block;
     width: 100%;
-    padding: 15px 1.2em;
+    padding: 14px 1.2em;
     &:hover { text-decoration: none; }
   }
   @include bp(xxlarge){
@@ -300,8 +305,9 @@ $icon-size: 27px;
     &--img { max-width: 180px; }
   }
   &--partner {
-    display: block;
+    display: inline-block;
     line-height: 0;
+    margin: 0 0 0 10px;
     &--img { max-width: 130px; }
   }
 }
