@@ -1,37 +1,114 @@
 
 
 
-  - name: Cedric Taquin
-    class: cedric-taquin
+  - name: Ricardo Lucke
+    class: ricardo-lucke
     introduction: >
-      <p class="lead-paragraph">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+      <p class="lead-paragraph">Pro-surfer Ricardo Lucke introduces us to Puerto Rico, and gives away some of the best surfing spots on the island</p>
     interview: >
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
+      <h4>How many years have you been surfing?  How did you get into it?</h4>
+      <p>I’ve been surfing over 15 years ago or so. My dad got me into surfing. He used to take me every time he could. After a couple years, I started to compete in local contests and met most of my friends now a day.Since then, all I wanted to do was surf.</p>
+
+      <h4>Where are the best areas to surf?</h4>
+      <p>The whole island has awesome places to surf but usually the west side of the island; from Isabela to Rincon.</p>
+
+      <h4>What’s a normal day for you?</h4>
+      <p>I wake up and usually check the surf report and call my friends asking how the waves are. Then, I decide whether to go surfing or not. I usually go to Aviones in Piñones, just a short ride from home.  Everyone around goes there so you get to meet up with all local surfers. Also, I got to college, so I have to balance my time.</p>
+
+      <h4>What makes you feel proud about living in Puerto Rico?</h4>
+      <p>What makes me most proud about Puerto Rico is how beautiful it is. Also, despite the small size of the island, it has some of the best beaches worldwide and a lot of talented people.</p>
+
+      <h4>Where are the best places for surfing in Puerto Rico, that visitors may not hear about?</h4>
+      <p>I would recommend visitors to go surf all around the north and west shores of the island. There’s plenty of surf.</p>
+
+      <h4>What can you recommend for people traveling to Puerto Rico?</h4>
+      <p>I recommend people to go out, grab a map and explore. Search for beaches, rivers, or waterfalls.  There’s a lot more to do out there than you can imagine.</p>
+
+      <h4>Tell us about your favourite parts of Puerto Rico?</h4>
+      <p>I really enjoy being around my hometown in Isla Verde. There’s always a lot going on around the place.  It’s also a short drive away from Aviones beach where I get to surf most of the time. Also, I enjoy heading across country to the west side of the island. I get to escape the city life and enjoy nature. Plus, the waves are really good!</p>
 
 
 
-  - name: Wilo Benet
-    class: wilo-benet
+  - name: Jose Marquez
+    class: jose-marquez
     introduction: >
-      <p class="lead-paragraph">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+      <p class="lead-paragraph">Jose Marquez, a budding photographer, frames his insider knowledge on Puerto Rico.</p>
     interview: >
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
+      <h4>How did you first get into Photography?</h4>
+      <p>I’m a commercial pilot and one day when I was in my private pilot training, I was practicing landings and in one of the landings I notice that three photographers were taking pictures of the aircraft that I was flying. I drove over, and they told me that they are plane spotters and they take pictures of aircrafts around the world, while each photographer builds his own virtual airplanes encyclopaedia. That blew my mind because I love airplanes and I always had an attraction for the cameras; and two weeks later I bought my first camera.</p>
+
+      <h4>What can you recommend for people travelling to Puerto Rico to try and capture?</h4>
+      <p>Puerto Rico has so many beautiful things to capture, but I would certainly recommend: Night time shooting, underwater shots and capturing some of our magnificent waterfalls.</p>
+
+      <h4>Where would you go to experience Puerto Rican nightlife?</h4>
+      <p>I like Old San Juan, there you can find a lot of different bars and each one has its own special drinks. If I am in the west of the island I like La Parguera in Lajas, this place is super cool! There are a lot of bars all together and different type of music in each one and in the weekends they got live music.</p>
+
+      <h4>What inspires you most about where you live?</h4>
+      <p>What inspires me the most where I live is nature. When I can connect with nature it is there where I find my inspiration.</p>
+
+      <h4>Where's your favourite place to go in all of Puerto Rico?</h4>
+      <p>Wow, that’s a really hard question. I would say Manati town. There you can find natural ocean pools, ocean caves, great reef to do snorkelling and in the surfing season you can surf great waves.</p>
+
+      <h4>Are there any great places that people may not know to go to?</h4>
+      <p>The majority of tourist visit the same places El Morro in Old San Juan, La Mina in El Yunque and Flamenco in Culebra, those are beautiful places but Puerto Rico had much more than that. Some of our hidden gems are: The Infinity pool in Naguabo, Rio Blanco in Naguabo, Ocean Cave in Aguadilla, Santa Clara waterfall in Yauco, El Verde River in Rio Grande, La Zanja in Fajardo, Shacks in Isabela, Natural Pools in Manati and Isla de Mona. This is only a small selection of our hidden gems.</p>
+
+      <h4>Where in Puerto Rico can you recommend for people travelling to try and visit?</h4>
+      <p>I would recommend Isla de Mona. It’s not on the main island but is part of Puerto Rico, and is a small island at the south west of Puerto Rico. This adventure is not for everybody; there’s no phone service or Wi-Fi on the island, you sleep in your own tent or hammock and you have to explore the island walking because there’s no road for cars. However, the island is paradise. You’ll find the best land caves and underwater caves, the most clear waters that you are ever going to see, the best reefs to practice snorkelling and the best night of your entire life with the sky full of stars.</p>
 
 
 
   - name: Rafael Martí
     class: rafael-marti
-    introduction: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
+    introduction: <p class="lead-paragraph">Rafael Marti is a fisherman who understands better than most the seas around Puerto Rico, and the richness of their offerings.</p>
     interview: >
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.</p>
+      <h4>How many years have you been a fisherman?</h4>
+      <p>I have been fishing for 23 years and have been a licensed fisherman for the last 12 years.</p>
+
+      <h4>What kind of fish do you normally catch?</h4>
+      <p>We run a chartered fishing operation and we fish marlin and sailfish which are only ‘catch and release’ only. For sale and consumption we normally fish mahi mahi (dorado), wahoo and yellowfin tuna.</p>
+
+      <h4>What is the most popular fish to catch? </h4>
+      <p>In the summer we go out to catch wahoo and king fish only, for the restaurants that ask us for them.</p>
+
+      <h4>Why are they popular?</h4>
+      <p>The wahoo can be prepared seared on the pan or made into ceviche, which is really popular among tourists for the flavor and consistency of the meat, and is very easy to prepare.</p>
+
+      <h4>Do you have any advice for visitors that are buying fish in Puerto Rico?</h4>
+      <p>Go to the local restaurants that offers fresh fish or to the fisherman wards that can buy really fresh fish. Don't order fish in the center of the island were meat and poultry is much better.</p>
+
+      <h4>What places on the island are your favourite?</h4>
+      <p>Beside Old San Juan for the history, bars ,restaurant and nightlife, visitors should go to El Yunque, our rainforest where the nature is amazing. Make sure to visit one of our many coffee haciendas that produce and roast gourmet coffee.</p>
+      <p>My very favorite part is Culebra, a small island that you can get to by ferry or by a small plane. Over there the beaches are the most beautiful in the world and you have a good variety of boutiques, hotels and restaurants. </p>
+
+      <h4>Are there any great places that people may not know to go to?</h4>
+      <p>Miramar, a small neighborhood with restaurant and bars, Rincon town for surfing, and the south shore were the beaches are not so beautiful but the small kiosk along the road offers the best fish and fried delicacies at very affordable prices. </p>
+
+
+
+  - name: Cedric Taquin
+    class: cedric-taquin
+    introduction: >
+      <p class="lead-paragraph">Cedric Taquin is a talented chef with a restaurant loved by locals. A passionate fisherman, he’ll usually spend his days fishing for that evening’s special.</p>
+    interview: >
+      <h4>Where did you grow up?</h4>
+      <p>I moved to Puerto Rico at the age of three, 32 yrs ago – I came here via Nairobi, Kenya then Belgium, then Louisiana, USA, and eventually Puerto Rico along with my parents. We have lived here ever since.</p>
+
+      <h4>What inspired you to become a chef?</h4>
+      <p>Becoming a chef came first of all from the love of eating, then cooking and most importantly growing up in a town that lacked good restaurants and good hospitality. All my life my parents always loved to have dinners and parties at home, and hospitality was a very big part of my younger years. We always had friends and family come from Europe for the holidays so being hosts was a very big part of our lives. Also my trips to Europe with my family made me experience good food and service. The fact that our town lacked restaurants always made me feel like there was the potential of making my own business here with the high hopes of establishing myself in my town and offering what nobody had done before with consistency.</p>
+
+      <h4>What type of cuisine is served at MenTa Cuisine restaurant? </h4>
+      <p>Having a French mother and a Belgian father, and a serious love for Puerto Rican food, the menu at MenTa is what i would consider French/Caribbean – this means I apply french culinary techniques and principles utilizing local, tropical products.</p>
+
+      <h4>What are your top five ingredients in Puerto Rican cooking?</h4>
+      <p>That would probably be the seafood, cilantro, recao (broad-leaf cilantro), avocado and the variety of citrus we have.</p>
+
+      <h4>Do you catch all the fish you serve yourself?</h4>
+      <p>I catch about 75% of the fish we work with at MenTa. The other 25% I buy from a select group of local fishermen that i know take good care of their catches.</p>
+      <p>At MenTa we work with ‘catch of the day’ or ‘poisson du jour’ so it really doesn’t matter what fish I catch or buy – fish species can vary from day to day and from seasons or availability – this is very cool because my customers have learned to appreciate different species for their specific characteristics and seasonality. Many customers of mine ask to see the photo of my catch on my phone rather than the menu when ordering food!</p>
+      <p>We work a lot with lionfish too – we have been pioneers in creating awareness of the health and culinary qualities and benefits this terribly invasive species has.</p>
+
+      <h4>Tell us about your favourite parts of Puerto Rico…</h4>
+      <p>My favorite parts of Puerto Rico are probably its beaches, mountains, fields, lakes and rivers. We have a lot of beautiful attractions that mother nature offers and once here, people should drive around and soak in the beauty. The coast of my town of Arecibo is stunning – the sunsets on the west coast are amazing. The fog in the mountains in the morning are breathtaking.</p>
+
+      <h4>What would a seven day tour of the island look like?</h4>
+      <p>With seven days here I would definitely rent a car and drive to at least one place on each coast – Old San Juan has nice nightlife and historical architecture. There is the Yunque, our national rainforest and our sister islands of Vieques and Culebra which have world-class beaches. My town of Arecibo has the newly constructed statue of Christopher Columbus (the highest bronze statue in the Americas), the Arecibo Observatory (one of the biggest radio-telescopes in the world until china made a bigger on recently), and the Caverns of Camuy (one of the biggest cavern systems in the world that can be entered and exited on foot). </p>
