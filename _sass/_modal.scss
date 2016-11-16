@@ -36,8 +36,8 @@
   }
   &__content {
     max-width: $xlarge;
-    background-color: white;
     display: none;
+    background-color: white;
     padding-bottom: ($margin);
     margin-top: ($margin*2) !important;
     margin-bottom: ($margin*2);
@@ -72,4 +72,24 @@
     font-size: .8em;
     color: #738a8c;
   }
+
+
+
+  &--video {
+    .modal__wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .modal__content {
+      display: block !important;
+      background-color: transparent;
+      margin: auto auto !important;
+      padding: 0;
+    }
+  }
+
 }

@@ -134,7 +134,5 @@
     $(this).parent().addClass('expanded');
   });
 
-  console.log(eleHeight);
-
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end
