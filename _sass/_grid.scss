@@ -76,6 +76,12 @@ section {
   }
 }
 
+.row__column {
+  &--gutters {
+    padding: 2em;
+  }
+}
+
 
 // -------- grid columns --------
 

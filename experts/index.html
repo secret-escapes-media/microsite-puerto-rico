@@ -5,8 +5,11 @@ class: experts
 home-nav: true
 nav: true
 nav-order: 7
-
 color: 016878
+link-booknow: >
+  https://ad.doubleclick.net/ddm/trackclk/N388808.2141904SECRETESCAPES/B10504420.142104967;dc_trk_aid=314331805;dc_trk_cid=73646631;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=
+
+short-description: Meet our local experts from chefs to photographers and more
 
 banner-title:
 banner-content:
@@ -25,7 +28,7 @@ intro: >
 
     {% assign experts = site.data.experts %}
     {% for expert in experts %}
-    <a href="{{ expert.url }}" data-expert="{{ expert.class }}" class="js-launch-modal row__column bg-image-ratio bg-image-ratio--1-1 box box--link box--underline box--underline-primary color-white" style="background-image:url('{{ site.baseurl }}/img/content/expert-{{ expert.class }}.jpg');">
+    <a href="{{ expert.url }}" data-expert="{{ expert.class }}" class="js-launch-modal row__column bg-image-ratio bg-image-ratio--3-2 box box--link box--underline box--underline-primary color-white" style="background-image:url('{{ site.baseurl }}/img/content/expert-{{ expert.class }}.jpg');">
       <h3 class="box--link-title">{{ expert.name }}</h3>
     </a>
     {% endfor %}

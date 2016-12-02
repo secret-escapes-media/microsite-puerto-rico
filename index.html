@@ -4,21 +4,26 @@ title: Puerto Rico
 class: overview
 nav: true
 nav-order: 1
+link-booknow: >
+  https://ad.doubleclick.net/ddm/trackclk/N388808.2141904SECRETESCAPES/B10504420.142105592;dc_trk_aid=314338607;dc_trk_cid=73646631;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=
 
 banner-title:
 banner-content: >
   <h4>The culturally kaleidoscopic island of Puerto Rico remains the best kept secret in the Caribbean </h4>
-  <a href="#" class="js-launch-modal btn--play btn btn--solid">
+  <a href="#" data-video-id="" class="js-launch-modal btn--play btn btn--solid">
     Watch video
-    <img src="img/icons/play.png" class="js-svg-swap image-inline" height="20px" width="20">
+    <img src="{{ site.baseurl }}/img/icons/play.png" class="js-svg-swap image-inline" height="20px" width="20">
   </a>
+
+videoembed: >
+  <iframe src="https://player.vimeo.com/video/193886901" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 intro: >
   <p class="lead-paragraph">A spellbinding land, Puerto Rico fuses colonial Spanish flavour with American style, with a people known for warm, vivacious hospitality making any stay a treat. Its astounding beauty will captivate you upon arrival, be it the multi-coloured patchwork of colonial buildings knitted together by cobbled streets, or the tropical rainforests that bleed serendipitously into golden shorelines with azure blue waters. It’s a wholesome, inviting scene that is ripe for exploring.</p>
   <div class="js-expand-content">
   <p>Those with an active disposition won’t be disappointed; Puerto Rico offers some of the best surfing and scuba diving spots around – with unique natural phenomenon, like the breathtaking Laguna Grande, providing the icing on the cake. Or choose to mix with the heady culture of this Caribbean jewel, and explore the culinary delights of the island, the endless supply of quality rum, and the hip-shaking sounds of salsa.</p>
-  <p>Puerto Rico is a hot, frantic, and simultaneously laid-back den of complete escape, ready and waiting to fulfil your Caribbean wanderlust.</p>
-  <p>Escape the dreary weather and plan your perfect getaway on sun-drenched shores. Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649*, courtesy of Norwegian.</p>
+  <p>Puerto Rico is a hot, frantic, and simultaneously laid-back den of complete escape, ready and waiting to fulfil your Caribbean wanderlust. For more information on Puerto Rico visit <a href="http://www.seepuertorico.com/">here</a>. </p>
+  <p>Escape the dreary weather and plan your perfect getaway on sun-drenched shores. Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649*, courtesy of <a href="https://www.norwegian.com/uk/destinations/puerto-rico---san-juan?D_City=LGW">Norwegian</a>.</p>
   <a href="javascript:void(0);" class="js-expand-content--btn">Read more...</a>
   </div>
 
@@ -34,7 +39,10 @@ intro: >
     {% assign pagelinks = site.pages | where:"home-nav","true" | sort:"nav-order" %}
     {% for pagelink in pagelinks %}
     <a href="{{ site.baseurl }}{{ pagelink.url }}" class="row__column bg-image-ratio bg-image-ratio--3-2 box box--link box--underline box--underline-primary color-white {{ pagelink.class }}" style="background-image:url('{{ site.baseurl }}/img/bg/banner-{{ pagelink.class }}.jpg');">
-      <span class="box--link-title h3">{{ pagelink.title }}</span>
+      <span class="box--link-title">
+        <h3>{{ pagelink.title }}</h3>
+        <p class="lead-paragraph">{{ pagelink.short-description}}</p>
+      </span>
     </a>
     {% endfor %}
 

@@ -5,11 +5,22 @@ class: adventure
 home-nav: true
 nav: true
 nav-order: 2
-
 color: 43561b
+link-booknow: >
+  https://ad.doubleclick.net/ddm/trackclk/N388808.2141904SECRETESCAPES/B10504420.142104965;dc_trk_aid=314338606;dc_trk_cid=73646631;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=
+short-description: Break your own record on the World's longest zipline
 
 banner-title:
-banner-content:
+banner-content: >
+  <a href="#" class="js-launch-modal btn--play btn btn--solid">
+    Watch video
+    <img src="{{ site.baseurl }}/img/icons/play.png" class="js-svg-swap image-inline" height="20px" width="20">
+  </a>
+
+videoembed: >
+  <iframe src="https://player.vimeo.com/video/165934256" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
 
 intro: >
   <p class="lead-paragraph">If you love to get the adrenaline flowing, Puerto Rico is a hotbed for adventure. Zipline over rainforest canopies, rappel down deep, cavernous caves, catch some waves or immerse yourself in the islands’ equestrian heritage. Your adventure starts here.</p>
@@ -38,4 +49,7 @@ sections:
 ---
 
 
+
+
+{% include video-modal.html %}
 

@@ -86,11 +86,10 @@
 
   // EVENT - launch modal & populate with content
   $('.js-launch-modal').on('click', function(e) {
-    var expert = $(this).attr('data-expert');
+
     e.preventDefault();
     // launch modal
     modal.removeClass('is-closed').addClass('is-open').fadeIn();
-    $('.modal__content#' + expert).addClass('active');
     $('body').css('overflow', 'hidden');
   });
 

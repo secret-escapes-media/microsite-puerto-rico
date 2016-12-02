@@ -177,6 +177,10 @@ $nav-arrow-width: 66px;
     display: inline-block;
     white-space: nowrap;
     color: $light-grey;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
     @include transition;
     & + &:before {
       // dividing lines between site nav items
@@ -185,10 +189,10 @@ $nav-arrow-width: 66px;
       top: 50%;
       left: 0;
       display: block;
-      height: 2px;
-      width: 2px;
-      background-color: $white-5;
+      height: ($site-nav-height / 1.33);
+      width: 1px;
       transform: translateY(-50%);
+      background-color: $white-15;
       @include transition;
     }
     &--current { border-bottom: 3px solid $partner-primary; }
@@ -197,7 +201,7 @@ $nav-arrow-width: 66px;
   &__link {
     display: inline-block;
     width: 100%;
-    padding: 14px 1.2em;
+    padding: 15px 1.2em;
     &:hover { text-decoration: none; }
   }
   @include bp(xxlarge){

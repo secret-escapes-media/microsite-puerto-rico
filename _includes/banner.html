@@ -21,7 +21,7 @@
 
       <div class="row__column">
         <div class="banner--subtitle">
-          {{ page.banner-content }}
+          {{ page.banner-content | liquify }}
         </div>
       </div>
 
@@ -30,8 +30,8 @@
           San Juan:
           <span id="temperature"></span>
         </h4>
-        <p>Get to Puerto Rico from just £159* courtesy of Norwegian.</p>
-        <a href="#" class="btn btn--wide btn--white">Book now</a>
+        <p>Get to Puerto Rico from just £159* courtesy of <a href="https://www.norwegian.com/uk/destinations/puerto-rico---san-juan?D_City=LGW">Norwegian</a>.</p>
+        <a href="{{ page.link-booknow }}" class="btn btn--wide btn--white">Book now</a>
       </div>
 
     </div>
@@ -86,8 +86,8 @@
           San Juan:
           <span id="temperature"></span>
         </h4>
-        <p>Get to Puerto Rico from just £159* courtesy of Norwegian.</p>
-        <a href="#" class="btn btn--wide btn--white">Book now</a>
+        <p>Get to Puerto Rico from just £159* courtesy of <a href="https://www.norwegian.com/uk/destinations/puerto-rico---san-juan?D_City=LGW">Norwegian</a>.</p>
+        <a href="{{ page.link-booknow }}" class="btn btn--wide btn--white">Book now</a>
       </div>
     </div>
 
