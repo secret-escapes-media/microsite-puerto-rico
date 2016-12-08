@@ -1,7 +1,7 @@
 # Site settings
 title: Puerto Rico
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
+  The culturally kaleidoscopic island of Puerto Rico remains the best kept secret in the Caribbean.
 baseurl: "/puerto-rico" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 

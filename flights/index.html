@@ -13,7 +13,7 @@ banner-title:
 banner-content:
 
 intro: >
-  <p class="lead-paragraph">Escape the dreary weather and plan your perfect getaway on sun-drenched shores. Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649*, courtesy of Norwegian. </p>
+  <p class="lead-paragraph">Escape the dreary weather and plan your perfect getaway on sun-drenched shores. Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649, courtesy of Norwegian. </p>
 
 ---
 
@@ -42,7 +42,7 @@ intro: >
   </div>
 
   <div class="row align-center">
-    <a href="#" class="btn btn--large">Book now</a>
+    <a href="{{ page.link-booknow }}" class="btn btn--large">Book now</a>
   </div>
 
 </section>
@@ -54,12 +54,36 @@ intro: >
   <div class="row align-center color-white">
 
     <h2>Destination: Puerto Rico</h2>
-    <p>Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649*, courtesy of Norwegian. With such a low price, consider flying in even greater comfort. With extra leg room, even comfier seats, complimentary meals and drinks, the Premium Cabin is a stellar upgrade. There’s even lounge access before you board.</p>
+    <p class="lead-paragraph">Fly direct from Gatwick from £159 one-way, or make things simple with a one week package deal from just £649, courtesy of Norwegian. With such a low price, consider flying in even greater comfort. With extra leg room, even comfier seats, complimentary meals and drinks, the Premium Cabin is a stellar upgrade. There’s even lounge access before you board.</p>
 
-    <a href="#" class="btn btn--large btn--white">Book now</a>
+    <a href="{{ page.link-booknow }}" class="btn btn--large btn--white">Book now</a>
 
   </div>
 </section>
 
 
 {% include competition-section.html %}
+
+
+
+
+
+
+<div class="hidden">
+
+  <script type="text/javascript">
+
+    var ord = Number(ord) || Math.floor(Math.random()*10e12);
+    function generateScript(src_1){
+      var script = document.createElement('script');
+      var script_link = src_1 + ord + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?';
+      script.src = script_link;
+      $('head').append(script);
+    };
+    /*-- DOUBLECLICK // Tracking 1x1-20161128_Puerto Rico_Fly Norwegian_1x1 --*/
+    generateScript("https://ad.doubleclick.net/ddm/trackimpj/N388808.2141904SECRETESCAPES/B10504420.142105659;dc_trk_aid=314340213;dc_trk_cid=73646631;ord=");
+
+  </script>
+
+</div>
+

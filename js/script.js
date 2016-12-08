@@ -88,8 +88,11 @@
   $('.js-launch-modal').on('click', function(e) {
 
     e.preventDefault();
+
     // launch modal
+    var expert = $(this).attr('data-expert');
     modal.removeClass('is-closed').addClass('is-open').fadeIn();
+    $('.modal__content#' + expert).addClass('active');
     $('body').css('overflow', 'hidden');
   });
 

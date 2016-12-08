@@ -16,6 +16,18 @@
       padding: 0 10px;
     }
   }
+  .logo--secret-escapes {
+    text-align: center !important;
+    @include bp(large) {
+      text-align: left !important;
+    }
+  }
+  .logo--partners {
+    text-align: center !important;
+    @include bp(large) {
+      text-align: right !important;
+    }
+  }
 }
 
 
